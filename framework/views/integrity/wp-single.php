@@ -7,7 +7,7 @@
 // =============================================================================
 
 $fullwidth = get_post_meta( get_the_ID(), '_x_post_layout', true );
-$pfx_date = get_the_date( 'l, F j, Y', $post_id );
+$pfx_date = get_the_date( 'F j, Y', $post_id );
 
 ?>
 
@@ -21,12 +21,15 @@ $pfx_date = get_the_date( 'l, F j, Y', $post_id );
 
  
       <?php endwhile; ?>
+ 
+
 
 <?php if ( !wp_is_mobile() ) { ?>  
 <div class="post-wrap">
     <?php
 query_posts('meta_key=post_views_count&showposts=3&orderby=meta_value_num&order=DESC');
 ?>
+ 
 
   <div class="popular-on-bable"><h4>POPULAR ON BABLE</h4>
     
@@ -50,6 +53,12 @@ query_posts('meta_key=post_views_count&showposts=3&orderby=meta_value_num&order=
 <?php } ?>
 
 </div>
+     <?php if ( wp_is_mobile() ) { ?>
+       <span class='st_facebook_large' ></span>
+<span class='st_twitter_large' ></span>
+<span class='st_googleplus_large' ></span>
+<span class='st_linkedin_large' ></span>
+<?php } ?>
    
 
 

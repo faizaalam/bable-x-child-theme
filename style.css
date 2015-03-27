@@ -55,7 +55,7 @@ margin-top: 0px;
 }
 
 
-/*.home > > div > .x-container-fluid> .x-main > article > .entry-wrap > .entry-header > .entry-title,.home >h2 a:hover*/
+
  div.entry-wrap > header > h2 > a{
 color:#0179dd! important;
 }
@@ -263,8 +263,9 @@ text-align: center;
 }
 #topp{
 	
-	margin-bottom: 2%;
-	
+  line-height: 1.0;
+  	margin: 0 auto 2% auto ;
+  text-align: center;
 }
 #menud{
 	float:right! important;
@@ -294,13 +295,12 @@ left: -38%! important;
 
 
 .entry-content{
-	margin-top: 2%;
 	padding: 0%  2% 1% 5%;
 	font-size: 16px! important;
 
 }
 .entry-content.excerpt {
-  margin-top: 14%! important;
+  margin-top: 9.5%! important;
 }
 .entry-header {
 font-size: 2vmin! important;
@@ -313,9 +313,10 @@ height:4.2rem;
 }
 
 #excerpt-text{
-	margin-bottom:10%;
+	margin-bottom:16%;
 	color: rgb(47,47,47);
 	line-height: 1.2;
+  height: 5rem;
 
 }
 #excerpt-date{
@@ -339,7 +340,7 @@ margin-bottom: 2%;
 #bottom > a{
 	color: white! important;
 	font-size: 1.4rem! important;
-     padding-right: 3%! important;
+     padding-left: 3%! important;
 }
 
 #copyright{
@@ -350,7 +351,7 @@ margin-bottom: 2%;
 
 /*single post */
 .single-post > div > .x-container-fluid > .x-main > article > div.entry-featured{
-  height:45rem;
+  height:43rem;
 }
 .single-post > div > .x-container-fluid > .x-main {
 width: 100%! important;
@@ -424,6 +425,7 @@ margin-top: 1.2%;
 .single-post > div > .x-container-fluid > .x-main >.post > div.entry-wrap{
 	padding-left:10%;
 	padding-right: 10%;
+  padding-top: 1.5%;
     background:#f9f9f9;
 }
 .entry-content > h3, .entry-content > p:nth-child(3)  {
@@ -434,7 +436,7 @@ margin-top: 1.2%;
 }
 .header-avatar img {
 border-radius: 100%;
-margin-top: 2%;
+margin-top: 1.3%;
 }
 
 .entry-featured h2 {
@@ -445,16 +447,10 @@ margin-top: 2%;
 }
 
 #top > footer > div{
-	padding-left: 12%;
-padding-right: 17%;
+
 }
-#text-17 > div{
-	margin-left: -11%! important;
-}
-#text-19{
-	
-	margin-right: -47%;
-}
+
+
 
 
 
@@ -634,17 +630,7 @@ background:white;
 /*menu */
 
 
-.menu{
-  margin: 1% -2% 0 0%;
-  width:11%;
-  height: 22%;
-}
 
-@media only screen and (min-width: 128px) {
-  .menu {
-
-    margin: 1% -2% 0 0%;
-  }
 
 .navigation-wrapper {
   background: -webkit-linear-gradient(#002a67, #0079dd); /* For Safari 5.1 to 6.0 */
@@ -705,15 +691,8 @@ background:white;
 
 .cd-header {
   
-  /*top: 0%;
-  left: 0;
-  width:100vw;
-  height: 30vh;
-  background: rgba(2, 23, 37, 0.95);
-  height: 50px;
-  width: 100%;*/
+
   z-index: 3;
-  box-shadow: 0 -11px 2px rgba(0, 0, 0, 0.3);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -958,10 +937,6 @@ background:white;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  
-  -webkit-transition: all 2s ease-in-out;
-  -moz-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
   font-weight: 500;
   display: table;
   line-height: 1.5;
@@ -971,10 +946,19 @@ background:white;
   width: 100vw;
   
 }
+
+.cd-primary-nav li:hover {
+  background: white;
+  
+}
+.cd-primary-nav > ul > li:hover > a{
+color: #0079dd !important;
+  }
+
 .cd-primary-nav a {
   color: #fff;
   font-weight: bold;
- 
+   background: none !important;
  
 }
  .cd-primary-nav ul a:hover {
@@ -998,7 +982,7 @@ background:white;
 }
 
 .menu-name h2 {
-margin-top: 0;
+margin-top: 0px;
 font-size: 1.6rem;
 margin-left:3rem;
 margin-right: 10%;
@@ -1060,7 +1044,6 @@ div.outer.sharing:hover img{
 
 
 .lr p {
-  font-family: 'Roboto', sans-serif;
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -1075,7 +1058,7 @@ div.outer.sharing:hover img{
 }
 
 .popular-on-bable > h4{
-  color:#007be1;
+  color:#0079dd;
   text-align:center;
   font-weight: bold;
   margin-top: 0px;
@@ -1083,10 +1066,10 @@ div.outer.sharing:hover img{
   background-position:center bottom;
   height:60px;
   margin-bottom: 0px;
-  
+    font-family: inherit;
 }
 .single-post > div > .x-container-fluid > .x-main > article > div.entry-wrap > .fb-like{
-  margin-left: 5.7rem! important;
+ padding:  0% 0% 0% 5%;
 }
 #category{
   width:50%;
@@ -1116,7 +1099,7 @@ div.outer.sharing:hover img{
 
 
 .fb-comments span {
-    width: 70% !important;
+   /* width: 70% !important; */
 }
 .fb-comments iframe {
     width: 100% !important;
@@ -1172,14 +1155,14 @@ width: 200px;
 
 /* Overlay closing cross */
 .overlay .overlay-close {
-  width: 80px;
-  height: 80px;
+    width: 20px;
+  height: 20px;
   position: absolute;
-  right: 20px;
-  top: 20px;
+  margin: 0.5% 5.5%;
   overflow: hidden;
   border: none;
-  background: url(../wordpress/wp-content/uploads/2015/02/cross.png) no-repeat center center;
+  background: url('http://127.0.0.1/wordpress/wp-content/uploads/2015/02/cross.png') no-repeat center center;
+
   text-indent: 200%;
   color: transparent;
   outline: none;
@@ -1196,7 +1179,7 @@ width: 200px;
   top: 10%;
   left: 50%;
   color: white;
-  margin-top: 8%;
+  margin-top: 11%;
  
   line-height: 1.2;
   
@@ -1206,6 +1189,7 @@ width: 200px;
   width: 37%;
   text-align: center;
   margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 
@@ -1239,6 +1223,10 @@ width: 200px;
   text-transform: uppercase;
 text-align: center;
 font-size: 5vmin;
+line-height: 1.1;
+}
+.single-article{
+    line-height: 0.8
 }
 /*mobile-view */
 .post-mobile-layout{
@@ -1280,6 +1268,7 @@ opacity:0.4;
 .post-content {
   font-size: 3.6vmin;
   margin-top: 0px;
+  line-height: .6;
 }
 
 .post-mobile-layout {
@@ -1299,23 +1288,26 @@ opacity:0.4;
 
 /* for mobile */
 .post-mobile-title{
-  font-size:2vmin;
+  font-size:1.4rem;
+  line-height: .3;
+  color:#0179dd;
 }
 .cat-date{
-  font-size:1.5vmin;
+  font-size:1.2rem;
 }
 #share-title{
   margin-bottom: 2%;
+    letter-spacing: 1.1px
 
 
 }
 #copylink{
-    width: 56%;
+    width: 65%;
   float: left;
   background: white;
   color: black;
   font-size: 12px;
-  padding: 1.5%;
+  padding: 2.7%;
 }
 #copy-button{
   background: #00b0ee;
@@ -1325,17 +1317,71 @@ opacity:0.4;
 
 .copybutton{
 float: right;
-  width: 42%;
+  width: 35%;
   font-size: 17px;
   background:  #00b0ee;
+   padding:1.2%;
   
 }
 .copyboard{
     width: 27%;
   
   margin: 0 auto;
+ 
 }
 #box{
 margin-bottom: 0px;
 
+}
+
+@media screen and (max-width: 1000px) {
+    .entry-featured h2{
+        width:75%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .post-content{
+        line-height: 1.5;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .post-left-column{
+        width:47%;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .post-right-column{
+        width: 50%;
+    }
+}
+.hentry{
+  margin-top: 0px;
+}
+.x-colophon.bottom .x-colophon-content{
+  margin: 30px 0 30px;
+}
+
+footer > .x-container-fluid.max.width {
+
+  width: 100%;
+}
+
+.left-column{
+  width:48%;
+
+}
+.right-column{
+    width: 48%;
+  float: right;
+  margin-left: 2%;
+  text-align: right;
+}
+.footer-text{
+  width: 100%;
+}
+
+
+
+.x-topbar .p-info{
+  background: white;
 }

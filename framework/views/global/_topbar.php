@@ -8,7 +8,9 @@
 
 ?>
 
+
 <?php if ( x_get_option( 'x_topbar_display', 0 ) == 1 ) : ?>
+
 
   <div class="x-topbar">
     <div class="x-topbar-inner x-container-fluid max width">
@@ -24,16 +26,26 @@
 
 </div>
   </div>
+  <?php if ( !wp_is_mobile() ) { ?>
 
     <?php if(is_front_page()){ ?>
 <div id="topp">
-<p id="top-1" >THE BABLE BLOG</p>
-<p  id="top-2">Business need to fulfill brand promises by delighting</p> 
+<span id="top-1" >THE BABLE BLOG</span><br>
+<span  id="top-2">Business need to fulfill brand promises by delighting</span> 
 </div> 
 <?php } ?>
-
-
+<?php } 
+    
+  
+   ?>
 <?php endif; ?>
+
+
+
+
+
+
+
 
    
 

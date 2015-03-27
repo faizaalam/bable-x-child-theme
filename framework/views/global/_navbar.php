@@ -15,7 +15,7 @@ $is_one_page_nav = x_is_one_page_navigation();
 <?php if ( ( $navbar_position == 'static-top' || $navbar_position == 'fixed-top' || $is_one_page_nav ) && $logo_nav_layout == 'stacked' ) : ?>
 
 
-
+<?php if ( !wp_is_mobile() ) { ?>
 
   <div class="x-navbar-wrap">
     <div class="<?php x_navbar_class(); ?>">
@@ -28,7 +28,11 @@ $is_one_page_nav = x_is_one_page_navigation();
 
       </div> <!-- end .x-navbar-inner -->
     </div> <!-- end .x-navbar -->
-  </div> <!-- end .x-navbar-wrap -->
+  </div> 
+  <?php } 
+    
+  
+   ?><!-- end .x-navbar-wrap -->
 
 <?php else : ?>
 
