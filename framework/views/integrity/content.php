@@ -7,6 +7,18 @@
 $category = get_the_category();
 $firstCategory = $category[0]->cat_name;
 $pfx_date = get_the_date( 'l, F j, Y', $post_id );
+$mfx_date = get_the_date( 'F j, Y', $post_id );
+?>
+
+   <?php if ( wp_is_mobile() ) { ?>
+   <?php if ( is_single() ) { ?>
+
+   <h5 class="post-heading-mobile">
+   <span class="post-title-mobile"><b><?php echo get_the_title( $ID ); ?></b></span><br>
+    <span class="post-date-mobile"> <?php echo $pfx_date; ?></span>
+   </h5>
+     <?php } 
+}
 ?>
 <div class="overlay overlay-hugeinc">
   <div class="white_logo"><img src="http://127.0.0.1/wordpress/wp-content/uploads/2015/03/logo_white.png"></div>
@@ -58,7 +70,7 @@ client.on( "ready", function( readyEvent ) {
 <?php } 
 }
 ?>
-<?php if ( wp_is_mobile() || !wp_is_mobile() ) { ?>
+<?php if ( !wp_is_mobile() ) { ?>
   
 <?php if ( is_single() ) { ?> 
 <div class="entry-featured" style="background: linear-gradient(to right, rgba(0,48,113,1), rgba(0,112,209,1)); background-position: center; text-align: center">
@@ -98,7 +110,7 @@ client.on( "ready", function( readyEvent ) {
      <div class="post-left-column"><img src="<?php echo wp_get_thumbnail_url(get_the_ID()); ?>">
      </div>
    <div class="post-right-column">
-    <h3 class="post-content"> <span class="cat-date"><?php echo $firstCategory; ?>/  <?php echo $pfx_date; ?></span><br>
+    <h3 class="post-content"> <span class="cat-date"><b><?php echo $firstCategory; ?></b>&nbsp; / &nbsp;<?php echo $mfx_date; ?></span><br>
       <span class="post-mobile-title"> <b><?php echo get_the_title( $ID ); ?></b></span><br>
 
      </h3>
@@ -128,6 +140,9 @@ client.on( "ready", function( readyEvent ) {
   <?php } 
 }
 ?>
+
+
+
 
   <?php x_get_view( 'integrity', '_content', 'post-footer' ); ?>
   <?php x_google_authorship_meta(); ?>

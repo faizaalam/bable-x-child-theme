@@ -1178,6 +1178,18 @@ input[type="text"]:focus {
 }
 /* ----------------------------- | End of Front Page - Mobile View |----------------------------------- */
 /* ----------------------------- | Single Post Page - Mobile View |----------------------------------- */
+
+.post-date-mobile{
+    font-size:0.7em;
+}
+.post-title-mobile{
+    font-size: 
+}
+.post-heading-mobile{
+    padding:2% 14%;
+}
+
+
 /* ----------------------------- | End of Single Post Page - Mobile View |----------------------------------- */
 /* ----------------------- | Footer View | ---------------------------- */
 
@@ -1240,3 +1252,43 @@ hr {
     }
 }
 /* ----------------------- | End of Footer View | ---------------------------- */
+
+/* ------------------------- */
+
+
+.wrap {
+  padding: 1.5rem 1.5rem;
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+  background: white;
+  top:0;
+}
+#mobile-menu-button {
+  background: #07598b;
+  padding: 1rem 2rem;
+  color: white;
+  text-decoration: none;
+  width: 30%;
+  text-align: center;
+  float: right;
+}
+#hidden-div {
+  display: none;
+  width: 100%;
+  background: #0975B6;
+  color: white;
+}
+#mobile-menu {
+  margin: 0;
+  padding: 0;
+}
+#mobile-menu li {
+  text-align: center;
+  list-style: none;
+  padding: .8rem 0;
+  border-bottom: 1px solid #07598b;
+}
+
+
+
