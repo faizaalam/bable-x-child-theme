@@ -25,6 +25,7 @@ $is_one_page_nav = x_is_one_page_navigation();
 
         <div class="x-container-fluid max width">
           <?php x_get_view( 'global', '_nav', 'primary' ); ?>
+          
          
         </div>
 

@@ -42,7 +42,8 @@
 
    <?php if ( wp_is_mobile() ) { ?>
   <div class="footer-mobile" style="text-align: center;">
-    <a href="/wordpress/"><img src="http://127.0.0.1/wordpress/wp-content/uploads/2015/02/WebAble_logo21.png"></a>
+    <a href="/wordpress/"><img src="http://127.0.0.1/wordpress/wp-content/uploads/2015/03/Untitled.png"></a><br>
+    <!--
     <ul>
         <li><a href="#">Work</a></li>
         <li><a href="#">About</a></li>
@@ -52,6 +53,8 @@
         <li><a href="#">Contact</a></li>
 
     </ul>
+  -->
+  <p id="copyright-mobile">© 2015 WebAble Digital. All Rights Reserved.</p>
 
   </div>
     <?php } 

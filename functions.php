@@ -5,6 +5,10 @@
 // Overwrite or add your own custom functions to X in this file.
 // =============================================================================
 
+add_image_size('Featured-Image-Mobile', 200, 200, false);
+add_image_size('Featured-Image-Desktop', 400, 200, false);
+
+
 function the_titlesmall($before = '', $after = '', $echo = true, $length = false) { $title = get_the_title();
 
 if ( $length && is_numeric($length) ) {

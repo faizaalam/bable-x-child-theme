@@ -1,3 +1,4 @@
+
 <?php
 
 // =============================================================================
@@ -64,10 +65,12 @@ query_posts('meta_key=post_views_count&showposts=3&orderby=meta_value_num&order=
 
 <!-- Post Page - Mobile - Sharing Buttons - Below Post Body  -->
      <?php if ( wp_is_mobile() ) { ?>
+     <div class="mobile-shareing-buttons">
        <span class='st_facebook_large' ></span>
 <span class='st_twitter_large' ></span>
 <span class='st_googleplus_large' ></span>
 <span class='st_linkedin_large' ></span>
+      </div>
 <?php } ?>
    
 <!-- END of Post Page - Mobile - Sharing Buttons - Below Post Body  -->

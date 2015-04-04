@@ -14,15 +14,7 @@ Template: x
 /* ------------------ | Front Page - Desktop view | ------------------------------- */
 /* -------------- | Mysterious Css | -------- */
 
-.entry-thumb {
-    background: #007be1;
-}
-.entry-thumb:before {
-    content: none;
-}
-.hentry {
-    margin-top: 0px;
-}
+
 .x-recent-posts a {
     margin-right: 1.5%;
     padding: 0px;
@@ -674,8 +666,17 @@ div.entry-wrap > header > h2 > a {
     padding: 0px;
 }
 #category {
-    width: 50%;
+    width: 70%;
     float: left;
+}
+.entry-featured {
+    background: #007be1;
+}
+.entry-thumb:before {
+    content: none;
+}
+.hentry {
+    margin-top: 0px;
 }
 /* ---------------------- | Articles Hover Effects | -------------- */
 
@@ -685,13 +686,13 @@ div.entry-wrap > header > h2 > a {
 .home > #top > .x-container-fluid > .x-main > .x-iso-container > article:hover div.entry-wrap > header > h2 > a {
     color: #00b0ee! important;
 }
-.home > #top > .x-container-fluid > .x-main > .x-iso-container > article:hover a.entry-thumb img {
+.home > #top > .x-container-fluid > .x-main > .x-iso-container > article:hover .entry-featured img {
     opacity: 0.4;
 }
 /* ---------------------- | Articles Share | ---------------------*/
 
 .outer {
-    width: 50%;
+    width: 30%;
 }
 .outer.sharing {
     float: right;
@@ -907,13 +908,11 @@ input[type="text"]:focus {
     padding-top: 1.5%;
     background:#f9f9f9;
 }
+
 #y {
     text-align: center;
 }
-.entry-content > h3,
-.entry-content > p:nth-child(3) {
-    display: none;
-}
+
 .share-button {
     padding: 4px 30px;
     color:white;
@@ -1160,38 +1159,112 @@ input[type="text"]:focus {
     font-size: 3.6vmin;
     margin-top: 0px;
     line-height: .6;
+    letter-spacing: normal;
 }
 @media screen and (max-width: 500px) {
     .post-content {
         line-height: 1.5;
     }
 }
-@media screen and (max-width: 1050px) {
-    .post-left-column {
-        width:47%;
-    }
+
+
+.x-main ,.x-sidebar{
+    margin-top: 50px;
 }
-@media screen and (max-width: 1050px) {
+
+    
+
+
+
+
+
+@media (max-width:1300px) and (min-width:1050px) {
+    .post-content {
+        line-height: 1.2;
+        font-size: 18px;
+    }
+    .cat-date{
+        font-size:14px;
+    }
+    .post-left-column {
+        width:45%;
+    }
     .post-right-column {
         width: 50%;
     }
 }
+
+@media (max-width:1050px) and (min-width:980px) {
+    .post-content {
+        line-height: 1;
+        font-size: 18px;
+    }
+    .cat-date{
+        font-size:14px;
+    }
+}
+@media (max-width:980px) and (min-width:768px) {
+    .post-content {
+        line-height: 1.2;
+        font-size: 17px;
+    }
+    .cat-date{
+        font-size:12px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .x-main {
+        width:88%! important;
+    }
+}
+
 /* ----------------------------- | End of Front Page - Mobile View |----------------------------------- */
 /* ----------------------------- | Single Post Page - Mobile View |----------------------------------- */
+.single-post{
+    background-color: white;
+}
 
 .post-date-mobile{
     font-size:0.7em;
 }
 .post-title-mobile{
-    font-size: 
+    font-size: 22px;
+    color:#4f4f4f;
+    letter-spacing: normal;
 }
 .post-heading-mobile{
-    padding:2% 14%;
+    padding:2% 5%;
+    margin-top: 3%;
+    line-height: .9;
+
+}
+@media screen and (max-width: 1500px) {
+    .single-post > div > .x-container-fluid > .x-main >.post > div.entry-wrap {
+        background-color: white;
+        padding-left:0px;
+        padding-right: 0px;
+    }
+    .single-post > div > .x-container-fluid > .x-main >.post > .entry-wrap > .entry-content {
+  padding: 0% 3% 1% 5%;
+}
+}
+.entry-content {
+    padding: 0% 2% 1% 5%;
+    font-size: 16px! important;
 }
 
-
+.mobile-shareing-buttons
+{
+    text-align: center;
+}
 /* ----------------------------- | End of Single Post Page - Mobile View |----------------------------------- */
 /* ----------------------- | Footer View | ---------------------------- */
+hr {
+    background:rgb(0,123,225);
+    border-top: 1px solid rgb(0,123,225);
+    border-bottom: 1px solid rgb(0,123,225);
+}
 
 .x-colophon.bottom .x-colophon-content {
     margin: 30px 0 30px;
@@ -1226,17 +1299,7 @@ footer > .x-container-fluid.max.width {
     19);
     color:white;
 }
-hr {
-    background:rgb(0,
-    123,
-    225);
-    border-top: 1px solid rgb(0,
-    123,
-    225);
-    border-bottom: 1px solid rgb(0,
-    123,
-    225);
-}
+
 #bottom > a {
     color: white! important;
     font-size: 1.4rem! important;
@@ -1246,14 +1309,31 @@ hr {
     font-size:1.4rem;
     float:left! important;
 }
+.copyright-mobile{
+    text-align: center;
+    font-size: 3vmin;
+}
 @media screen and (max-width: 880px) {
     #copyright {
         margin-left:20% !important;
     }
 }
+
+
+/* --------- | Mobile Footer View | --------- */
+
+.footer-mobile{
+    background: rgb(17, 18, 19);
+    color:white;
+    padding:3%;
+bottom:0;}
+
+#top > div.footer-mobile > ul > li > a{
+    color: white;
+}
 /* ----------------------- | End of Footer View | ---------------------------- */
 
-/* ------------------------- */
+
 
 
 .wrap {
@@ -1263,21 +1343,25 @@ hr {
   z-index: 20;
   background: white;
   top:0;
+  height: 50px;
 }
 #mobile-menu-button {
   background: #07598b;
-  padding: 1rem 2rem;
+ 
   color: white;
   text-decoration: none;
-  width: 30%;
+  width: 100px;
   text-align: center;
   float: right;
+  margin-top: 0.5%;
+  font-size: 14px;
 }
 #hidden-div {
   display: none;
   width: 100%;
   background: #0975B6;
   color: white;
+  margin-top: 6px;
 }
 #mobile-menu {
   margin: 0;
@@ -1287,8 +1371,19 @@ hr {
   text-align: center;
   list-style: none;
   padding: .8rem 0;
-  border-bottom: 1px solid #07598b;
+ 
 }
+.fb:comments-count.fb_comments_count_zero{
+    display: none! important;
 
+}
+.entry-content > h3,
+.entry-content > p:nth-child(3) {
+    display: none;
+}
+.single-post > div > .x-container-fluid > .x-main >.post > .entry-wrap > .entry-content > p > .fb:comments-count.fb_comments_count_zero{
+    display: none! important;
+
+}
 
 

@@ -63,7 +63,7 @@ client.on( "ready", function( readyEvent ) {
 <?php if ( is_front_page()  ) { ?>
 
  <div class="entry-featured">
-    <?php x_featured_image(); ?>
+    <?php the_post_thumbnail('Featured-Image-Desktop'); ?>
   </div>
   
 
@@ -107,11 +107,11 @@ client.on( "ready", function( readyEvent ) {
    <?php if ( is_front_page() ) { ?>
    <a href="<?php echo get_permalink( $ID ); ?>">
    <div class="post-mobile-layout">
-     <div class="post-left-column"><img src="<?php echo wp_get_thumbnail_url(get_the_ID()); ?>">
+     <div class="post-left-column"><?php the_post_thumbnail('Featured-Image-Mobile'); ?>
      </div>
    <div class="post-right-column">
     <h3 class="post-content"> <span class="cat-date"><b><?php echo $firstCategory; ?></b>&nbsp; / &nbsp;<?php echo $mfx_date; ?></span><br>
-      <span class="post-mobile-title"> <b><?php echo get_the_title( $ID ); ?></b></span><br>
+      <span class="post-mobile-title"> <b><?php the_titlesmall('', '...', true, '40') ?></b></span><br>
 
      </h3>
 
@@ -133,11 +133,13 @@ client.on( "ready", function( readyEvent ) {
 <?php } ?>
     <?php x_get_view( 'integrity', '_content', 'post-header' ); ?>
     <?php x_get_view( 'global', '_content' ); ?>
+     <?php if ( !wp_is_mobile() ) { ?>
     <?php if(is_single()){ ?>
   <div id="y"><button type="button" class="share-button">SHARE</button></div>
 
   </div>
   <?php } 
+}
 }
 ?>
 

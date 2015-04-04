@@ -38,13 +38,13 @@
 <?php if ( !wp_is_mobile() ) { ?>
 
 <?php if(is_front_page()){ ?>
-<div id="topp">
+<!--<div id="topp">
     <span id="top-1">THE BABLE BLOG</span>
     <br>
     <span id="top-2">Business need to fulfill brand promises by delighting</span>
-</div>
+</div> -->
 <?php } ?>
-<?php } ?>
+<?php } ?> 
 <?php endif; ?>
 
 <!-- END of For Desktop View - Home Page - Header -->
