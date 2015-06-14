@@ -1,5 +1,5 @@
 <?php
-// Not finished - Dont know what is changed here
+
 // =============================================================================
 // VIEWS/GLOBAL/_HEADER.PHP
 // -----------------------------------------------------------------------------
@@ -7,6 +7,8 @@
 // =============================================================================
 
 ?>
+
+<!-- Added Font Awesome -->
 
 <!DOCTYPE html>
 <!--[if IE 9]><html class="no-js ie9" <?php language_attributes(); ?>><![endif]-->
@@ -18,6 +20,7 @@
   <title><?php wp_title(''); ?></title>
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
   <?php wp_head(); ?>
 </head>
 
@@ -32,6 +35,10 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
   <?php do_action( 'x_before_site_begin' ); ?>
+
+  
+ 
+
 
   <div id="top" class="site"> <!-- BEGIN #top.site -->
 

@@ -18,9 +18,9 @@
   <?php if ( is_single() ) : ?>
   <?php else : ?>
   <h2 class="entry-title">
-    <!-- Limiting the Title to 45 characters to fit within Post Box -->
-    <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-  <?php the_titlesmall('', '...', true, '45') ?>
+    <!-- Limiting the Title to 50 characters to fit within Post Box -->
+    <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>" target="_blank">
+  <?php the_titlesmall('', '', true, '50') ?>
     </a>
   </h2>
   <?php endif; ?>

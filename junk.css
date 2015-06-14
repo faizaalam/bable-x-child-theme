@@ -1,0 +1,247 @@
+/*******************************************************************************************************
+JUNK CSS 
+*******************************************************************************************************
+
+#y {
+    text-align: center;
+}
+
+.share-button {
+    padding: 4px 30px;
+    color:white;
+    background:#f3560d;
+    border:0px;
+    text-align: center;
+    margin-top: 1.2%;
+}
+
+
+/*
+#logooverlay {
+    background: url('http://localhost/wordpress/wp-content/uploads/2015/02/WebAble_logo211.png') no-repeat center center;
+    width: 100px;
+    height: 110px! important;
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    overflow: hidden;
+    border: none;
+    z-index: 100;
+}
+
+
+.fb-comments span {
+    /* width: 70% !important; 
+}
+.fb-comments iframe {
+    width: 100% !important;
+}
+.x-navbar-inner >.x-container-fluid > .x-nav-collapse > ul > li > a.sf-with-ul:hover,
+.x-navbar-inner >.x-container-fluid > .x-nav-collapse > ul > li > a.sf-with-ul:focus {
+    background: url('http://localhost/wordpress/wp-content/uploads/2015/02/iyfcx.png') ! important;
+    background-repeat: no-repeat! important;
+    background-position: center bottom !important;
+}
+/*@media only screen and (max-device-width: 1000px){
+body {
+  margin-bottom: 0px !important;
+}*/
+/* ------ | Share -Body Content | ------ */
+/*
+#share-title {
+    margin-bottom: 2%;
+    letter-spacing: 1.1px
+}
+#copylink {
+    width: 65%;
+    float: left;
+    background: white;
+    color: black;
+    font-size: 12px;
+    padding: 2.7%;
+}
+#copy-button {
+    background: #00b0ee;
+    border: none;
+    color: white;
+}
+.copybutton {
+    float: right;
+    width: 35%;
+    font-size: 17px;
+    background: #00b0ee;
+    padding:1.2%;
+}
+.copyboard {
+    width: 27%;
+    margin: 0 auto;
+}
+#box {
+    margin-bottom: 0px;
+}
+#copy {
+    background-color: #00b0ee;
+    border:#00b0ee;
+    color:white;
+}
+
+/* ------------------------ |  End of Share Overlay | -------------------- 
+.single-post > div > .x-container-fluid > .x-main > article > div.entry-featured {
+    height:auto;
+    display: inline-block;
+    width: 100%;
+}
+.single-post > div > .x-container-fluid > .x-main >.post > .entry-featured >h2:hover {
+    color:white! important;
+}
+
+ .fb:comments-count.fb_comments_count_zero{
+    display: none! important;
+
+}
+
+.single-post > div > .x-container-fluid > .x-main >.post > .entry-wrap > .entry-content > p > .fb:comments-count.fb_comments_count_zero{
+    display: none! important;
+
+}
+
+
+
+  ------------------------ | Share Overlay | -------------------- 
+  Overlay style 
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+      background: linear-gradient(to right, #002a67, #0079dd);
+  
+  opacity: .95;
+}
+ Overlay closing cross 
+
+.overlay .overlay-close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+      margin: 2.1% 2.7%;
+    overflow: hidden;
+    border: none;
+    background: url('http://s205830.gridserver.com/bable/wp-content/uploads/2015/05/cross.png') no-repeat center center;
+    text-indent: 200%;
+    color: transparent;
+    outline: none;
+    z-index: 100;
+}
+ Menu style 
+
+.overlay-hugeinc h4 {
+    text-align: center;
+    top: 10%;
+    left: 50%;
+    color: white;
+    margin-top: 11%;
+    line-height: 1.2;
+}
+
+#share-overlay-title {
+    text-transform: uppercase;
+    width: 37%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+ Effects 
+.overlay-hugeinc {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.5s,
+    visibility 0s 0.5s;
+    transition: opacity 0.5s,
+    visibility 0s 0.5s;
+}
+.overlay-hugeinc.open {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+/*
+.share-img {
+    float: right;
+    right: 3.3rem;
+    position: absolute;
+}
+.inner {
+    z-index: 999999;
+    float: right;
+}
+div.outer.sharing div.inner.sharing {
+    display: none;
+}
+div.inner.sharing{
+    height: 1em;
+}
+.single-post{
+    background: white !important;
+}
+.single-post{
+    background-color: white;
+}
+
+.has-post-thumbnail .entry-featured{
+    border-bottom: 0px;
+
+}
+/*
+.single-post > div > .x-container-fluid > .x-main > .entry-featured {
+    background: -webkit-linear-gradient(left,
+    rgba(0,
+    45,
+    168,
+    1.3),
+    rgba(0,
+    120,
+    220,
+    1));
+    /* For Safari 5.1 to 6.0 
+    
+    background: -o-linear-gradient(right,
+    rgba(0,
+    45,
+    168,
+    1),
+    rgba(0,
+    120,
+    220,
+    1));
+    /* For Opera 11.1 to 12.0 
+    
+    background: -moz-linear-gradient(right,
+    rgba(0,
+    45,
+    168,
+    1),
+    rgba(0,
+    120,
+    220,
+    1));
+    /* For Firefox 3.6 to 15 
+    
+    background: linear-gradient(to right,
+    rgba(0,
+    45,
+    168,
+    1),
+    rgba(0,
+    120,
+    220,
+    1));
+    /* Standard syntax (must be last) 
+}
+
+*******************************************************************************************************
+JUNK CSS 
+*******************************************************************************************************/
