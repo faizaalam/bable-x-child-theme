@@ -42,30 +42,6 @@
 
 
 
-  <!-- <a href="#">
-
-
- <div class="small-menu">
-<a class="small-menu-link" href="#">
-           <div class="small-category">category</div>
-         </a>
-         </div>
-       </a>
- <div class="categories-dropdown">
-  <ul>
-        <li><a href="http://webable.digital/work/">Work</a></li>
-        <li><a href="http://webable.digital/about/">About</a></li>
-        <li><a href="http://webable.digital/capabilities/">Capabilities</a></li>
-        <li><a href="http://webable.digital/bable/">Bable Blog</a></li>
-        <li><a href="http://webable.digital/join/">Join The Team</a></li>
-        <li><a href="http://webable.digital/contact/">Contact</a></li>
-
-
-    </ul>
-  </div> -->
-
-
-
   <a href="#">
 
 <!-- Menu Icons on Right of NavBar -->

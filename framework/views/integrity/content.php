@@ -103,7 +103,7 @@ endif;
 
 <!-- 7s- Desktop | Home/Post Page | Rest Content -->
 
-<?php if ( (!wp_is_mobile() && (is_front_page() || is_category()) )  || is_single() || is_search()) { ?>
+<?php if ( (!wp_is_mobile() && (is_front_page() || is_category()) )  || is_single() || is_search() || is_author()) { ?>
   <div class="entry-wrap">
     <?php x_get_view( 'integrity', '_content', 'post-header' ); ?>
     <?php x_get_view( 'global', '_content' ); ?>

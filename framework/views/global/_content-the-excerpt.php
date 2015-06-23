@@ -23,7 +23,7 @@
         <?php $excerpt = get_the_excerpt(); echo mb_strimwidth($excerpt, 0, 90, ".."); ?> </div>
   <?php } 
 ?>    
-<?php if ( is_front_page() || is_category() ) { ?>
+<?php if ( is_front_page() || is_category() || is_author() ) { ?>
         <?php $excerpt = get_the_excerpt(); echo mb_strimwidth($excerpt, 0, 108, "..."); ?> </div>
   <?php } 
 ?>     

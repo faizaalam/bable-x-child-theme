@@ -41,7 +41,7 @@
   </div>
 
   	<div class="wrap">
-  		<a href="/bable/" class="mobile-logo"><img src="/bable/wp-content/uploads/2015/05/white-logo-new-blog.png"/></a>
+  		<a href="http://webable.digital/" class="mobile-logo"><img src="/bable/wp-content/uploads/2015/05/white-logo-new-blog.png"/></a>
 
 
  <div class="menu right mobile">
@@ -67,7 +67,7 @@
    
   <div id="hidden-div">
     <ul id="mobile-menu">
-      <li class="mobile-menu-li"><a href="http://webable.digital/">Home</a></li>
+      <li class="mobile-menu-li"><a href="http://webable.digital/bable/">Home</a></li>
       
       <li class="mobile-menu-li"><a href="http://webable.digital/bable/category/marketing-branding/">Marketing & Branding</a></li>
          <ul class="sub-menu mobile">
